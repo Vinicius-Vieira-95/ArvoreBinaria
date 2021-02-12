@@ -1,35 +1,24 @@
 package aplication;
 
-import arvoreBinaria.ArvoreBinaria;
+import arvoreAVL.ArvoreAVL;
 
 public class Program {
 
 	
 	public static void main(String [] arg) {
 		
-		ArvoreBinaria ab = new ArvoreBinaria();
+		ArvoreAVL ab = new ArvoreAVL();
 		
-		ab.inserir(40);
-		ab.inserir(35);
-		ab.inserir(20);
-		ab.inserir(50);
-		ab.inserir(55);
-		ab.inserir(49);
-		ab.inserir(48);
+		ab.inserir(6);
+		ab.inserir(4);
+		ab.inserir(3);
+		ab.inserir(2);
+		ab.inserir(1);
 		
-		System.out.println("Chave encontrada"+ ab.buscar(35));
+		System.out.println("Chave encontrada: "+ ab.buscar(2));
 		
-		System.out.println(ab.getNo().toString());
-		
-		System.out.println("Chave encontrada"+ ab.buscar(20));
-		
+		System.out.println("Raiz: "+ ab.getNo().toString());
 		ab.caminhar();
-		System.out.println("//////////////////////////////////////////////////");
-		
-		ab.remover_ArvoreBinaria(50);
-		ab.remover_ArvoreBinaria(20);
-		ab.caminhar();
-		
 		
 	}
 	
