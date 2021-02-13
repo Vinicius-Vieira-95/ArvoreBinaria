@@ -9,10 +9,14 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		ArvoreAVL a = new ArvoreAVL(new Elemento(sc.nextInt()));
+		a.calcularBalanceamento();
+		a = a.verificarBalanceamento();
 		System.out.println(a.printArvore(0));
 		
 		while(true) {
 			a = a.inserir(new Elemento(sc.nextInt()));
+			a.calcularBalanceamento();
+			a = a.verificarBalanceamento();
 			System.out.println(a.printArvore(0));
 		}
 		
