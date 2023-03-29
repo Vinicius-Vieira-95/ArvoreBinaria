@@ -137,18 +137,18 @@ public class ArvoreAVL {
 		if (this.balaceamento >= 2 || this.balaceamento <= -2) {
 			if (this.balaceamento >= 2) {
 				if (this.balaceamento * this.dir.getBalaceamento() > 0) {
-					System.out.println("Rotação simple a direita");
+					System.out.println("RotaÃ§Ã£o simple a direita");
 					return rotacaoRR();
 				} else {
-					System.out.println("Rotação dupla a direita");
+					System.out.println("RotaÃ§Ã£o dupla a direita");
 					return rotacaoRL();
 				}
 			} else {
 				if (this.balaceamento * this.esq.getBalaceamento() > 0) {
-					System.out.println("Rotação simples a esquerda");
+					System.out.println("RotaÃ§Ã£o simples a esquerda");
 					return rotacaoLL();
 				} else {
-					System.out.println("Rotação dupla a esquerda");
+					System.out.println("RotaÃ§Ã£o dupla a esquerda");
 					return rotacaoLR();
 				}
 			}
